@@ -1,0 +1,54 @@
+Exercice 6
+enqueue_q et dequeue_q on une complexité de O(1), lorsqu'un customer va arriver dans la queue,
+il va arriver a la fin de la queue. lorsqu'un customer va sortir de la queue, c'est le premier arriver qui va sortir.
+nous n'avons pas besoin de parcourir la liste.
+
+
+Exercice 7
+insert_pq et remove_min_pq ont une complexité de O(n), les fonctions vont rechercher dans toute la liste
+l'élément souhaité pour pouvoir l'insérer ou le supprimer
+
+
+Exercice 8
+pour :
+#define N_VENDORS 5
+#define ARRIVAL_RATE (1.0/30)
+#define MEAN_SERVICE_TIME 100
+
+le résultat est de:
+le nombre total de clients servis est de : 1189
+le temps moyen de réponse est de  : 119 secondes
+
+
+pour :
+#define N_VENDORS 5
+#define ARRIVAL_RATE (1.0/80)
+#define MEAN_SERVICE_TIME 100
+
+le résultat est de :
+le nombre total de clients servis est de : 448
+le temps moyen de réponse est de  : 102 secondes
+//si on réduit la chance qu'un client entre dans la boulangerie, il y aura beaucoup moins de client servis
+
+
+pour:
+#define N_VENDORS 5
+#define ARRIVAL_RATE (1.0/80)
+#define MEAN_SERVICE_TIME 300
+
+le résultat est de :
+le nombre total de clients servis est de : 429
+le temps moyen de réponse est de  : 371 secondes
+//la boulangerie est rarement pleine alors il n'y a pas beaucoup de différence si on augmente le temps de service sur le nombre de client servis
+//le temps moyen de réponse est bien plus grand
+
+
+pour :
+#define N_VENDORS 2
+#define ARRIVAL_RATE (1.0/80)
+#define MEAN_SERVICE_TIME 300
+
+le résultat est de :
+le nombre total de clients servis est de : 222
+le temps moyen de réponse est de  : 6607 secondes
+//si on baisse le nombre de vendeur, moins de client serons servis et chaque client attendera beaucoup plus longtemps
