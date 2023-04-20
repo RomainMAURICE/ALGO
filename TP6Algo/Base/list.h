@@ -13,5 +13,5 @@ link *find_list(link *lst, char word[]);
 link *insert_first_list(link *lst, char word[]);
 
 void display_list(link *lst);
-
+int nb_total_mot(FILE *F);
 #endif

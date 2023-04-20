@@ -40,13 +40,15 @@ int main(int argc, char **argv) {
     display_list(lst);
     
     int words = 0;
-    int occurence = nb_occurence(lst);
+    int total = nb_total_mot(fin);
+
     link *ptr;
     for (ptr = lst; ptr != NULL; ptr = ptr->next) {
         words++;
     }
 
-    printf("total number of words = %d\n", words);
+    printf("total number of words = %d\n", total);
+    printf("total number of distinct words = %d\n", words);
 
     free_list(lst);
 

@@ -28,6 +28,16 @@ void display_list(link *lst) {
     }
 }
 
+int nb_total_mot(FILE *F){
+    FILE f = fopen(F, "r");
+    char mot[100];
+    int i = 0;
+    while(fscanf(F, "%s", mot)==1){
+        i++;
+    }
+    return i;
+}
+
 void free_list(link *lst) {
     while (lst) {
         link *tmp = lst;
