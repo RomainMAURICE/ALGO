@@ -1,0 +1,2 @@
+avec la fonction random_tree, on peut insérer 7 500 000~ éléments en 10 secondes
+avec la fonction random_tree_ordered, on peut insérer 60 000~ éléments en 10 secondes
