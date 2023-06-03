@@ -1,0 +1,8 @@
+digraph tree {
+  splines=false
+  node [shape=record,height=.1]
+  edge [tailclip=false, arrowtail=dot, dir=both];
+
+  n0x55791b05d2a0 [label="<left> |{ <value> 10 | <height> 0 }| <right>"];
+
+}
